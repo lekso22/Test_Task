@@ -8,7 +8,7 @@ describe('UI Tests', function () {
     before(async function () {
         driver = await new Builder().forBrowser('chrome').build();
         // open the page
-        await driver.get('file:///C:/Users/lekso/Desktop/Test_Task/Test_Task.html');
+        await driver.get(__dirname + '/../Test_Task.html');
     });
 
     it('Test 1:Checks that correct page is loaded', async function () {
